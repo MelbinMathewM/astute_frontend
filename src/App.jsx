@@ -70,16 +70,16 @@ const AdminRoutes = () => {
 
   return (
     <Routes>
-      <Route path='' element={<Navigate to={'/admin/login'} />} />
-      <Route path='login' element={adminContext?.isAuth? <Navigate to={'/admin/dashboard'}/> : <ALogin />} />
-      <Route path='dashboard' element={adminContext?.isAuth? <Dashboard/> : <Navigate to={'/admin/login'}/>}  />
-      <Route path='courses' element={adminContext?.isAuth? <Course/> : <Navigate to={'/admin/login'}/>}  />
-      <Route path='courses/details/:universityId/:courseId' element={adminContext?.isAuth? <CourseDetail/> : <Navigate to={'/admin/login'}/>}  />
-      <Route path='courses/add' element={ adminContext?.isAuth? <AddCourse /> : <Navigate to={'/admin/login'}/>} />
-      <Route path='notes' element={ adminContext?.isAuth ? <ANotes /> : <Navigate to={'/admin/login'} /> } />
-      <Route path='notes/add' element={ adminContext?.isAuth ? <AddNotes/> : <Navigate to={'/admin/login'} /> }/>
-      <Route path='notes/view' element={ <AViewPdf /> } />
-      <Route path='profile' element={adminContext?.isAuth ? <AProfile /> : <Navigate to={'/admin/login'} />} />
+      <Route path='/' element={<Navigate to={'/admin/login'} />} />
+      <Route path='/login' element={adminContext?.isAuth? <Navigate to={'/admin/dashboard'}/> : <ALogin />} />
+      <Route path='/dashboard' element={adminContext?.isAuth? <Dashboard/> : <Navigate to={'/admin/login'}/>}  />
+      <Route path='/courses' element={adminContext?.isAuth? <Course/> : <Navigate to={'/admin/login'}/>}  />
+      <Route path='/courses/details/:universityId/:courseId' element={adminContext?.isAuth? <CourseDetail/> : <Navigate to={'/admin/login'}/>}  />
+      <Route path='/courses/add' element={ adminContext?.isAuth? <AddCourse /> : <Navigate to={'/admin/login'}/>} />
+      <Route path='/notes' element={ adminContext?.isAuth ? <ANotes /> : <Navigate to={'/admin/login'} /> } />
+      <Route path='/notes/add' element={ adminContext?.isAuth ? <AddNotes/> : <Navigate to={'/admin/login'} /> }/>
+      <Route path='/notes/view' element={ <AViewPdf /> } />
+      <Route path='/profile' element={adminContext?.isAuth ? <AProfile /> : <Navigate to={'/admin/login'} />} />
     </Routes>
   )
 }
