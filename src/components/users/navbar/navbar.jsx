@@ -9,8 +9,8 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <div className="w-full fixed top-0 left-0 py-3 bg-gradient-to-b from-[#93EBFF] to-[#EEFFFF] z-50 shadow-md">
-            <div className="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+        <div className="w-full fixed top-0 left-0 py-3 bg-white z-50 shadow-md">
+            <div className="flex justify-between items-center px-6 py-2 max-w-7xl mx-auto">
                 {/* Logo Section */}
                 <img src={astute_logo} alt='astute-logo' className='w-32 h-auto' />
 
